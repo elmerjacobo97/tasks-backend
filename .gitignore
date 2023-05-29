@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+dist/
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Dependencies
+package-lock.json
+yarn.lock
