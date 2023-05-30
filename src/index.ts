@@ -1,10 +1,7 @@
-import express from "express";
-import { taskRoutes } from "./routes";
+import { app } from "./server";
 
-const app = express();
+const port = process.env.PORT || 4000;
 
-app.use("/api/tasks", taskRoutes);
-
-app.listen(3000, () => {
-  console.log("Servidor escuchando en el puerto 3000");
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
 });
